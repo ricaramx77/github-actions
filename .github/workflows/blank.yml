@@ -40,5 +40,5 @@ jobs:
         run: |
           echo "Evento: ${{toJSON(github.event) }}"
           echo "GitHub Actor: $GITHUB_ACTOR"
-          echo "GitHub Actor: $GITHUB_REPOSITORY"
+          echo "GitHub Repository: $GITHUB_REPOSITORY"
 
