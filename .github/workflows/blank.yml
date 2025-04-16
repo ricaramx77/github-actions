@@ -22,7 +22,7 @@ jobs:
       account: 3452342
 
       username: ${{secrets.USERNAME}}
-      password: ${{secrets.PASWWORD}}
+      password: ${{secrets.PASSWORD}}
 
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
