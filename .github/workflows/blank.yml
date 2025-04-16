@@ -36,7 +36,7 @@ jobs:
           echo "El valor de la variable de entorno es: ${{ env.region }}"
           echo "El valor de la variable de entorno es: ${{ env.account }}"
 
-      - name: "Mostrando variables por defecto        
+      - name: "Mostrando variables por defecto"
         run: |
-            echo "Evento: ${{ toJson(github.event) }}"
+          echo "Evento: ${{toJSON(github.event) }}"
 
