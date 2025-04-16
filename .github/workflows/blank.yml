@@ -30,9 +30,13 @@ jobs:
         run: echo "Hola mundo!"
 
       - name: "Mostrando variables de entorno"
-        if: ${{env.platform == 'azure'}}
+        if: ${{env.platform == 'aws'}}
         run: |
           echo "El valor de la variable de entorno es: ${{ env.platform }}"
           echo "El valor de la variable de entorno es: ${{ env.region }}"
           echo "El valor de la variable de entorno es: ${{ env.account }}"
+
+      - name: "Mostrando variables por defecto        
+        run: |
+            echo "Evento: ${{ toJson(github.event) }}"
 
